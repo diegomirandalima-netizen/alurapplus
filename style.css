@@ -1,0 +1,11 @@
+:root {
+    --branco-principal:#ffffff;
+    --cinza-escuro: #c0c0c0;
+    --botao-azul:#1667BfF7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
