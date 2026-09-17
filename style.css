@@ -1,37 +1,73 @@
 :root {
-       --branco-principal: #FFFFFF;
-       --cinza-secundario: #C0C0C0;
-       --botao-azul: #167BF7;
-       --cor-de-fundo: #00030C;
-   }
-   * {
-       margin: 0;
-       padding: 0;
-   }
-body {
-        background-color: var(--cor-de-fundo);
-        color: var(--branco-principal);
-}
-.container {
-        height: 100vh;
-}
-.principal {
-        background-image: url("Background.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-}
-.container__botao {
-        justify-content: flex-end;
-        background-color: var(--botao-azul);
-        border-radius: 5px;
-        padding: 1em;
-        color: var(--branco-principal);
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Evita que o padding altere o tamanho final dos elementos */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: Arial, sans-serif; /* Adicionado para melhorar o visual dos textos */
+}
+
+.container {
+    height: 100vh;
+}
+
+.principal {
+    background-image: url("Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    /* Organiza o conteúdo da section principal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Garante que os blocos de conteúdo comecem à esquerda */
+    padding: 5%; /* Dá um recuo para o conteúdo não colar nas bordas da tela */
+}
+
+/* NOVA CLASSE: Controla o empilhamento e alinhamento dos botões */
+.botoes-coluna {
+    display: flex;
+    flex-direction: column;  /* Coloca um botão embaixo do outro */
+    align-items: flex-start;  /* Alinha os dois totalmente à esquerda */
+    gap: 16px;                /* Cria o espaçamento vertical entre eles */
+    margin-top: 20px;         /* Afasta os botões da imagem acima */
+}
+
+/* Botão 1: Azul Preenchido */
+.container__botao {
+    display: inline-block;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em 2em; /* Ajustado padding para ficar mais proporcional */
+    color: var(--branco-principal);
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+}
+
+/* Botão 2: Transparente com Borda */
 .container__botao2 {
-        justify-content: flex-end;
-        background-color: var(--botao-azul);
-        border-radius: 5px;
-        padding: 1em;
-        color: var(--branco-principal);
+    display: inline-block;
+    background-color: transparent;       /* Fundo transparente */
+    border: 1px solid var(--branco-principal); /* Borda branca */
+    border-radius: 5px;
+    padding: 1em 2em;
+    color: var(--branco-principal);
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold;
+    transition: background-color 0.3s;  /* Transição suave para o efeito hover */
+}
+
+/* Efeito visual ao passar o mouse no botão transparente */
+.container__botao2:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
