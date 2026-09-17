@@ -21,7 +21,6 @@ body {
         background-size: contain;
 }
 .container__botao {
-        flex-direction: column;
         justify-content: flex-end;
         background-color: var(--botao-azul);
         border-radius: 5px;
@@ -29,29 +28,10 @@ body {
         color: var(--branco-principal);
 }
 
-.container__botao2.btn-transparente {
-  /* Remove a cor de fundo padrão e deixa transparente */
-  background-color: transparent; 
-  
-  /* Define a cor da borda e do texto (ex: branco) */
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  
-  /* Espaçamento interno e arredondamento das bordas */
-  padding: 12px 24px;
-  border-radius: 5px;
-  
-  /* Ajustes de fonte e cursor */
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  
-  /* Transição suave para o efeito hover */
-  transition: all 0.3s ease;
-}
-
-/* Efeito ao passar o mouse */
-.btn-transparente:hover {
-  background-color: #ffffff; /* O fundo ganha cor */
-  color: #000000;            /* O texto inverte a cor para contrastar */
+.container__botao {
+        justify-content: flex-end;
+        background-color: var(--botao-azul);
+        border-radius: 5px;
+        padding: 1em;
+        color: var(--branco-principal);
 }
