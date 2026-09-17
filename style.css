@@ -28,3 +28,12 @@ body {
         padding: 1em;
         color: var(--branco-principal);
 }
+
+.container__botao2 {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        background-color: var(--botao-azul);
+        border-radius: 5px;
+        padding: 1em;
+        color: var(--branco-principal);
+}
