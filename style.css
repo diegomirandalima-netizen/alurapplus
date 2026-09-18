@@ -1,4 +1,4 @@
-:root {
+:root {       /* Seu código original */
     --branco-principal: #FFFFFF;                 /* Define a variavel para a cor branca */
     --cinza-secundario: #C0C0C0;                 /* Define a variavel para a cor cinza */
     --botao-azul: #167BF7;                       /* Define a variavel para a cor azul do botao */
@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-    height: 100vh;                               /* Define que o container vai ocupar toda a altura visivel da tela */
+    height: 100vh;                                /* Define que o container vai ocupar toda a altura visivel da tela */
+    display: grid;              
 }
 
 .principal {
@@ -41,14 +42,17 @@ body {
 }
 
 .container__botao {
-    display: inline-block;                       /* Permite aplicar propriedades de tamanho e padding no link */
+    display: block;                        /* Permite aplicar propriedades de tamanho e padding no link */
     background-color: var(--botao-azul);         /* Coloca a cor azul no fundo do primeiro botao */
     border-radius: 5px;                          /* Arredonda os cantos do botao em cinco pixels */
     padding: 1em 2em;                            /* Define o espacamento interno vertical e horizontal do botao */
     color: var(--branco-principal);              /* Define a cor do texto do botao como branca */
     text-decoration: none;                       /* Remove a linha sublinhada padrao que vem nos links */
     font-weight: bold;                           /* Deixa o texto do botao em negrito */
-    cursor: pointer;                             /* Garante que o cursor vire a mao de clique sobre o botao */
+    cursor: pointer; 
+    font-size: 12px; 
+    color: var(--cinza-secundario); 
+                           /* Garante que o cursor vire a mao de clique sobre o botao */
 }
 
 .container__botao2 {
@@ -67,3 +71,4 @@ body {
 .container__botao2:hover {
     background-color: rgba(255, 255, 255, 0.1);  /* Adiciona um fundo branco bem transparente quando o mouse passa por cima */
 }
+
