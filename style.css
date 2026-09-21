@@ -1,74 +1,75 @@
-:root {       /* Seu código original */
-    --branco-principal: #FFFFFF;                 /* Define a variavel para a cor branca */
-    --cinza-secundario: #C0C0C0;                 /* Define a variavel para a cor cinza */
-    --botao-azul: #167BF7;                       /* Define a variavel para a cor azul do botao */
-    --cor-de-fundo: #00030C;                     /* Define a variavel para a cor escura de fundo */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
 }
-
 * {
-    margin: 0;                                   /* Reseta a margem padrao de todos os elementos */
-    padding: 0;                                  /* Reseta o espacamento interno de todos os elementos */
-    box-sizing: border-box;                      /* Faz com que a borda e o padding nao aumentem o tamanho do bloco */
+    margin: 0;
+    padding: 0;
 }
-
 body {
-    background-color: var(--cor-de-fundo);       /* Aplica a cor escura no fundo da pagina inteira */
-    color: var(--branco-principal);              /* Aplica a cor branca como padrao para os textos */
-    font-family: Arial, sans-serif;              /* Define uma fonte limpa e padrao para leitura */
+     background-color: var(--cor-de-fundo);
+     color: var(--branco-principal);
 }
-
 .container {
-    height: 100vh;                                /* Define que o container vai ocupar toda a altura visivel da tela */
-    display: grid;              
+     height: 100vh;
+     display: grid; 
+     grid-template-columns: 33% 33% 33%; 
 }
-
 .principal {
-    background-image: url("Background.png");     /* Define a imagem de fundo desta secao */
-    background-repeat: no-repeat;                /* Impede que a imagem de fundo fique se repetindo */
-    background-size: contain;                    /* Ajusta a imagem para caber inteira dentro do espaco */
-    display: flex;                               /* Ativa o modelo flexbox para organizar os elementos filhos */
-    flex-direction: column;                      /* Organiza o conteudo interno em formato de coluna */
-    justify-content: center;                     /* Centraliza o conteudo verticalmente na tela */
-    align-items: flex-start;                     /* Alinha todos os blocos internos para o lado esquerdo */
-    padding: 5%;                                 /* Cria uma margem interna de seguranca nas bordas da tela */
+     background-image: url("Background.png");
+     background-repeat: no-repeat;
+     background-size: contain;
+     align-items: center;
+     text-align: center;
 }
-
-.botoes-coluna {
-    display: flex;                               /* Ativa o flexbox especifico para a caixa dos botoes */
-    flex-direction: column;                      /* Coloca um botao exatamente abaixo do outro */
-    align-items: flex-start;                     /* Garante que ambos os botoes fiquem alinhados a esquerda */
-    gap: 16px;                                   /* Cria um espaco de dezesseis pixels entre os botoes */
-    margin-top: 20px;                            /* Cria uma distancia entre os botoes e o elemento de cima */
-}
-
 .container__botao {
-    display: block;                        /* Permite aplicar propriedades de tamanho e padding no link */
-    background-color: var(--botao-azul);         /* Coloca a cor azul no fundo do primeiro botao */
-    border-radius: 5px;                          /* Arredonda os cantos do botao em cinco pixels */
-    padding: 1em 2em;                            /* Define o espacamento interno vertical e horizontal do botao */
-    color: var(--branco-principal);              /* Define a cor do texto do botao como branca */
-    text-decoration: none;                       /* Remove a linha sublinhada padrao que vem nos links */
-    font-weight: bold;                           /* Deixa o texto do botao em negrito */
-    cursor: pointer; 
-    font-size: 12px; 
-    color: var(--cinza-secundario); 
-                           /* Garante que o cursor vire a mao de clique sobre o botao */
+ background-color: var(--botao-azul);
+ border-radius: 5px;
+ padding: 1em;
+ color: var(--branco-principal);
+ display: block; 
+ text-decoration: none;
+ margin-bottom: 1em;
+ text-align: center;
+}
+.botao_secundario { 
+ background-color: transparent;
+ border: 2px solid var(--branco-principal);
+}
+.container__aviso {
+ font-size: 12px;
+ color: var(--cinza-secundario);
+}
+.container__titulo {
+ font-size: 28px;
+ font-weight: 700;
+}
+.container__imagem {
+ margin: 1em 0 2em 0;
+}
+.container__caixa {
+ margin: 0 6em;
+}
+.secundario__imagem {
+ width: 80%;
+}
+.secundario {
+ align-items: center;
+ margin: 0 10em;
+}
+.descricao__titulo {
+ font-weight: 700;
+ font-size: 48px;
+ color: var(--branco-principal);
+ margin-bottom: 0.1em;
+}
+.descricao__texto {
+ color: var(--cinza-secundario);
 }
 
-.container__botao2 {
-    display: inline-block;                       /* Permite aplicar propriedades de tamanho e padding no link */
-    background-color: transparent;               /* Deixa o fundo do segundo botao totalmente invisivel */
-    border: 1px solid var(--branco-principal);   /* Cria uma borda fina e branca ao redor do botao */
-    border-radius: 5px;                          /* Arredonda os cantos do botao em cinco pixels */
-    padding: 1em 2em;                            /* Define o mesmo espacamento interno do primeiro botao */
-    color: var(--branco-principal);              /* Define a cor do texto do botao como branca */
-    text-decoration: none;                       /* Remove a linha sublinhada padrao do link */
-    font-weight: bold;                           /* Deixa o texto do botao em negrito */
-    transition: background-color 0.3s;           /* Cria uma transicao suave de tempo para o efeito visual */
-    cursor: pointer;                             /* Garante que o cursor vire a mao de clique sobre o botao */
-}
 
-.container__botao2:hover {
-    background-color: rgba(255, 255, 255, 0.1);  /* Adiciona um fundo branco bem transparente quando o mouse passa por cima */
-}
+
+
 
