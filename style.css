@@ -1,164 +1,77 @@
 :root {
-       --branco-principal: #FFFFFF;
-       --cinza-secundario: #C0C0C0;
-       --botao-azul: #167BF7;
-       --cor-de-fundo: #00030C;
+       --branco-principal: #FFFFFF;         /* Guarda a cor branca para usar depois */
+       --cinza-secundario: #C0C0C0;         /* Guarda a cor cinza para textos menores */
+       --botao-azul: #167BF7;               /* Guarda a cor azul para os botoes */
+       --cor-de-fundo: #00030C;             /* Guarda a cor escura do fundo da pagina */
    }
    * {
-       margin: 0;
-       padding: 0;
+       margin: 0;                           /* Remove a margem externa padrao de tudo */
+       padding: 0;                          /* Remove o espacamento interno padrao de tudo */
    }
 body {
-        background-color: var(--cor-de-fundo);
-        color: var(--branco-principal);
+        background-color: var(--cor-de-fundo);/* Aplica a cor escura salva no fundo */
+        color: var(--branco-principal);      /* Aplica a cor branca salva no texto geral */
 }
 .container {
-        height: 100vh;
-        display: grid; 
-        grid-template-columns: 33% 33% 33%; 
+        height: 100vh;                      /* Define a altura como 100% da tela visivel */
+        display: grid;                      /* Ativa o modo de layout em grade */
+        grid-template-columns: 33% 33% 33%; /* Divide a grade em tres colunas iguais */
 }
 .principal {
-        background-image: url("Background.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        align-items: center;
-        text-align: center;
+        background-image: url("Background.png");/* Coloca uma imagem de fundo */
+        background-repeat: no-repeat;        /* Impede que a imagem de fundo fique se repetindo */
+        background-size: contain;           /* Ajusta o tamanho da imagem para caber na tela */
+        align-items: center;                /* Alinha os itens ao centro verticalmente */
+        text-align: center;                 /* Alinha os textos no centro horizontalmente */
 }
 .container__botao {
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block; 
-    text-decoration: none;
-    margin-bottom: 1em;
-    text-align: center;
+    background-color: var(--botao-azul);    /* Aplica a cor azul salva no fundo do botao */
+    border-radius: 5px;                     /* Deixa os cantos do botao arredondados */
+    padding: 1em;                           /* Cria um espacamento interno de 1em */
+    color: var(--branco-principal);         /* Coloca o texto do botao em branco */
+    display: block;                         /* Faz o botao se comportar como um bloco na linha */
+    text-decoration: none;                  /* Remove o sublinhado padrao de links */
+    margin-bottom: 1em;                     /* Cria um espaco de 1em abaixo do botao */
+    text-align: center;                     /* Centraliza o texto dentro do botao */
 }
 .botao_secundario { 
-    background-color: transparent;
-    border: 2px solid var(--branco-principal);
+    background-color: transparent;          /* Deixa o fundo do botao invisivel */
+    border: 2px solid var(--branco-principal);/* Cria uma borda branca de 2 pixels */
 }
 .container__aviso {
-    font-size: 12px;
-    color: var(--cinza-secundario);
+    font-size: 12px;                        /* Define o tamanho do texto para 12 pixels */
+    color: var(--cinza-secundario);         /* Aplica a cor cinza salva ao texto */
 }
 .container__titulo {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 28px;                        /* Define o tamanho do titulo para 28 pixels */
+    font-weight: 700;                       /* Deixa a fonte em negrito pesado */
   }
   .container__imagem {
-    margin: 1em 0 2em 0;
+    margin: 1em 0 2em 0;                    /* Margens: 1em topo, 0 direita, 2em baixo, 0 esquerda */
 }
 .container__caixa {
-    margin: 0 6em;
+    margin: 0 6em;                          /* Define as margens: 0 no topo/baixo e 6em nas laterais */
 }
 .secundario__imagem {
-    width: 80%;
+    width: 80%;                             /* Define que a imagem ocupa 80% da largura do bloco */
 }
 .secundario {
-    align-items: center;
-    margin: 0 10em;
+    align-items: center;                    /* Alinha os elementos no centro verticalmente */
+    margin: 0 10em;                         /* Define as margens: 0 no topo/baixo e 10em nas laterais */
 }
 .descricao__titulo {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--branco-principal);
-    margin-bottom: 0.1em;
+    font-weight: 700;                       /* Deixa a fonte em negrito pesado */
+    font-size: 48px;                        /* Define o tamanho do titulo para 48 pixels */
+    color: var(--branco-principal);         /* Deixa esse titulo na cor branca */
+    margin-bottom: 0.1em;                   /* Cria um espaco bem pequeno abaixo do titulo */
 }
 .descricao__texto {
-    color: var(--cinza-secundario);
+    color: var(--cinza-secundario);         /* Aplica a cor cinza salva ao texto */
 }
 .secundario__botao {
-    display: inline-block;
-    margin-top: 1em;
+    display: inline-block;                  /* Permite mudar margens mas mantem o botao na linha */
+    margin-top: 1em;                        /* Cria um espaco de 1em acima do botao */
 }
 .container__descricao {
-    padding: 2em;
+    padding: 2em;                           /* Cria um espacamento interno de 2em em todos os lados */
 }
-
-
-
-
-
-:root {
-       --branco-principal: #FFFFFF;
-       --cinza-secundario: #C0C0C0;
-       --botao-azul: #167BF7;
-       --cor-de-fundo: #00030C;
-   }
-   * {
-       margin: 0;
-       padding: 0;
-   }
-body {
-        background-color: var(--cor-de-fundo);
-        color: var(--branco-principal);
-}
-.container {
-        height: 100vh;
-        display: grid; 
-        grid-template-columns: 33% 33% 33%; 
-}
-.principal {
-        background-image: url("Background.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        align-items: center;
-        text-align: center;
-}
-.container__botao {
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block; 
-    text-decoration: none;
-    margin-bottom: 1em;
-    text-align: center;
-}
-.botao_secundario { 
-    background-color: transparent;
-    border: 2px solid var(--branco-principal);
-}
-.container__aviso {
-    font-size: 12px;
-    color: var(--cinza-secundario);
-}
-.container__titulo {
-    font-size: 28px;
-    font-weight: 700;
-  }
-  .container__imagem {
-    margin: 1em 0 2em 0;
-}
-.container__caixa {
-    margin: 0 6em;
-}
-.secundario__imagem {
-    width: 80%;
-}
-.secundario {
-    align-items: center;
-    margin: 0 10em;
-}
-.descricao__titulo {
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--branco-principal);
-    margin-bottom: 0.1em;
-}
-.descricao__texto {
-    color: var(--cinza-secundario);
-}
-.secundario__botao {
-    display: inline-block;
-    margin-top: 1em;
-}
-.container__descricao {
-    padding: 2em;
-}
-
-
-
-
-
