@@ -1,81 +1,164 @@
-:root { /* Inicia a definicao de variaveis globais que podem ser reutilizadas em todo o arquivo */
-    --branco-principal: #FFFFFF; /* Guarda a cor branca em uma variavel chamada branco-principal */
-    --cinza-secundario: #C0C0C0; /* Guarda a cor cinza em uma variavel chamada cinza-secundario */
-    --botao-azul: #167BF7; /* Guarda a cor azul em uma variavel chamada botao-azul */
-    --cor-de-fundo: #00030C; /* Guarda a cor escura do fundo em uma variavel chamada cor-de-fundo */
-} /* Fecha o bloco de variaveis globais */
-* { /* O seletor asterisco aplica as regras para absolutamente todos os elementos da pagina */
-    margin: 0; /* Remove a margem externa padrao de todos os elementos */
-    padding: 0; /* Remove o espacamento interno padrao de todos os elementos */
-} /* Fecha o bloco do seletor global */
-body { /* Aplica estilos para o corpo inteiro da pagina */
-     background-color: var(--cor-de-fundo); /* Define a cor de fundo do site usando a variavel de cor escura */
-     color: var(--branco-principal); /* Define a cor padrao dos textos usando a variavel de cor branca */
-} /* Fecha o bloco do corpo */
-.container { /* Estiliza os elementos que possuem a classe container */
-     height: 100vh; /* Define que a altura do container ocupara cem por cento da altura da tela visivel */
-     display: grid; /* Ativa o modo de layout Grid para organizar os elementos em linhas e colunas */
-     grid-template-columns: 33% 33% 33%; /* Divide o espaco do grid em tres colunas iguais de trinta e tres por cento cada */
-} /* Fecha o bloco da classe container */
+:root {
+       --branco-principal: #FFFFFF;
+       --cinza-secundario: #C0C0C0;
+       --botao-azul: #167BF7;
+       --cor-de-fundo: #00030C;
+   }
+   * {
+       margin: 0;
+       padding: 0;
+   }
+body {
+        background-color: var(--cor-de-fundo);
+        color: var(--branco-principal);
+}
+.container {
+        height: 100vh;
+        display: grid; 
+        grid-template-columns: 33% 33% 33%; 
+}
+.principal {
+        background-image: url("Background.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        text-align: center;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; 
+    text-decoration: none;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.botao_secundario { 
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .container__imagem {
+    margin: 1em 0 2em 0;
+}
+.container__caixa {
+    margin: 0 6em;
+}
+.secundario__imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao {
+    padding: 2em;
+}
 
-.principal {                         /* Estiliza os elementos com a classe principal */
-     background-image: url("Background.png"); /* Define uma imagem de fundo para esta secao */
-     background-repeat: no-repeat;   /* Impede que a imagem de fundo fique se repetindo caso a tela seja grande */
-     background-size: contain;       /* Ajusta o tamanho da imagem de fundo para que ela caiba inteira dentro do espaco */
-     align-items: center;            /* Alinha os elementos internos verticalmente no centro da secao */
-     text-align: center;             /* Alinha todos os textos internamente para ficarem centralizados */
-}                                    /* Fecha o bloco da classe principal */
 
-.container__botao {                  /* Estiliza os elementos com a classe container__botao */
- background-color: var(--botao-azul); /* Define a cor de fundo do botao usando a variavel azul */
- border-radius: 5px;                 /* Arredonda os cantos do botao em cinco pixels */
- padding: 1em;                       /* Adiciona um espacamento interno de um em para aumentar a area clicavel do botao */
- color: var(--branco-principal);     /* Define a cor do texto do botao como branco */
- display: block;                     /* Faz o elemento se comportar como um bloco ocupando a largura disponivel da sua caixa */
- text-decoration: none;              /* Remove o sublinhado padrao que os links possuem */
- margin-bottom: 1em;                 /* Adiciona uma margem externa na parte inferior para afastar o proximo elemento */
- text-align: center;                 /* Centraliza o texto dentro do botao */
-}                                    /* Fecha o bloco da classe container__botao */
 
-.botao_secundario {                  /* Estiliza os elementos com a classe botao_secundario */
- background-color: transparent;      /* Torna o fundo do botao invisivel ou transparente */
- border: 2px solid var(--branco-principal); /* Cria uma borda solida de dois pixels com a cor branca em volta do botao */
-}                                    /* Fecha o bloco da classe botao_secundario */
 
-.container__aviso {                  /* Estiliza os elementos com a classe container__aviso */
- font-size: 12px;                    /* Define o tamanho da fonte do texto em doze pixels */
- color: var(--cinza-secundario);     /* Altera a cor do texto do aviso para a variavel cinza */
-}                                    /* Fecha o bloco da classe container__aviso */
 
-.container__titulo {                 /* Estiliza os elementos com a classe container__titulo */
- font-size: 28px;                    /* Define o tamanho da fonte do titulo em vinte e oito pixels */
- font-weight: 700;                   /* Define o peso da fonte como negrito bem marcado */
-}                                    /* Fecha o bloco da classe container__titulo */
+:root {
+       --branco-principal: #FFFFFF;
+       --cinza-secundario: #C0C0C0;
+       --botao-azul: #167BF7;
+       --cor-de-fundo: #00030C;
+   }
+   * {
+       margin: 0;
+       padding: 0;
+   }
+body {
+        background-color: var(--cor-de-fundo);
+        color: var(--branco-principal);
+}
+.container {
+        height: 100vh;
+        display: grid; 
+        grid-template-columns: 33% 33% 33%; 
+}
+.principal {
+        background-image: url("Background.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        text-align: center;
+}
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; 
+    text-decoration: none;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.botao_secundario { 
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .container__imagem {
+    margin: 1em 0 2em 0;
+}
+.container__caixa {
+    margin: 0 6em;
+}
+.secundario__imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao {
+    padding: 2em;
+}
 
-.container__imagem {                 /* Estiliza os elementos com a classe container__imagem */
- margin: 1em 0 2em 0;                /* Define margem de um em no topo, zero nas laterais e dois em na parte inferior */
-}                                    /* Fecha o bloco da classe container__imagem */
 
-.container__caixa {                  /* Estiliza os elementos com a classe container__caixa */
- margin: 0 6em;                      /* Define margem zero no topo e na base, e adiciona seis em de margem nas laterais */
-}                                    /* Fecha o bloco da classe container__caixa */
 
-.secundario__imagem {                /* Estiliza os elementos com a classe secundario__imagem */
- width: 80%;                         /* Ajusta a largura da imagem para ocupar oitenta por cento do espaco da sua caixa pai */
-}                                    /* Fecha o bloco da classe secundario__imagem */
 
-.secundario {                        /* Estiliza os elementos com a classe secundario */
- align-items: center;                /* Alinha os elementos internos verticalmente no centro desta secao */
- margin: 0 10em;                     /* Define margem zero no topo e na base, e dez em de espacamento nas laterais esquerda e direita */
-}                                    /* Fecha o bloco da classe secundario */
 
-.descricao__titulo {                 /* Estiliza os elementos com a classe descricao__titulo */
- font-weight: 700;                   /* Define a espessura da fonte em negrito */
- font-size: 48px;                    /* Aplica um tamanho de fonte grande de quarenta e oito pixels para este titulo */
- color: var(--branco-principal);     /* Garante que a cor do titulo seja branca atraves da variavel */
- margin-bottom: 0.1em;               /* Adiciona uma margem bem pequena abaixo do titulo para desgrudar do texto inferior */
-}                                    /* Fecha o bloco da classe descricao__titulo */
-
-.descricao__texto {                      /* Estiliza os elementos com a classe descricao__texto */
- color: var(--cinza-secundario);         /* Aplica a cor cinza claro da variavel para suavizar a leitura do texto */
-}                                        /* Fecha o bloco da classe descricao__texto */
